@@ -2,11 +2,10 @@
 self.addEventListener('push', function (event) {
     console.log('Push event received:', event);
     const data = event.data.json(); // Parse the message from the server as JSON
-    console.log('Push data:', data);
 
     // Display the push notification using the showNotification method
     event.waitUntil(
-        self.registration.showNotification(data.title, data.options)
+        self.registration.showNotification(data.options.tag)
             .then(() => console.log('Notification displayed:', data.title, data.options))
             .catch(err => console.error('Notification display error:', err))
     );

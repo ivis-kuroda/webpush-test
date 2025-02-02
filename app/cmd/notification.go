@@ -63,7 +63,7 @@ func PublishHandler(w http.ResponseWriter, r *http.Request) {
 	// Generate options in the backend
 	options := map[string]interface{}{
 		"body":               payload["body"],
-		"tag":                payload["title"] + time.Now().String(),
+		"tag":                "notification: " + time.Now().String(),
 		"icon":               "/assets/img/icon/cloud-192.png",
 		"badge":              "/assets/img/icon/cloud-192.png",
 		"requireInteraction": false,
