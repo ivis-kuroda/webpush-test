@@ -1,24 +1,24 @@
 {
-    "name": "My App",
-    "short_name": "My App",
+    "name": "Webpush test",
+    "short_name": "Webpush test",
     "start_url": "/",
     "display": "standalone",
-    "icon": [
+    "icons": [
         {
-            "src": "/img/icons/cloud-32.png",
+            "src": "/assets/img/icon/cloud-192.png",
             "sizes": "32x32",
             "type": "image/png"
         },
         {
-            "src": "/img/icons/cloud-96.png",
-            "sizes": "96x96",
+            "src": "/assets/img/icon/cloud-192.png",
+            "sizes": "64x64",
             "type": "image/png"
         },
         {
-            "src": "/img/icons/cloud-192.png",
+            "src": "/assets/img/icon/cloud-192.png",
             "sizes": "192x192",
             "type": "image/png"
         }
     ],
-    "version": "0.1.0"
+    "version": "0.2.0"
 }

@@ -17,6 +17,7 @@ func ConfigureRouter() chi.Router {
 
 	r.Get("/", IndexPage)
 	r.Post("/subscribe", SubscribeHandler)
+	r.Post("/unsubscribe", UnsubscribeHandler)
 	r.Post("/publish", PublishHandler)
 	return r
 }

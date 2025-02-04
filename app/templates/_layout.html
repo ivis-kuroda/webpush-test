@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    {{ .Body }}
+    {{ block "content" . }}{{ end }}
 </body>
 
 </html>
